@@ -1,0 +1,391 @@
+main.sign 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-illustration 
+{
+    display: none;
+}
+
+.sign-section 
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* align-items: center; */
+    gap: 3rem;
+
+    width: 100%;
+}
+
+.sign-section * 
+{
+    font-family: "Poppins", sans-serif !important;
+}
+
+.sign-heading
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.sign-heading .title 
+{
+    /* font-family: "Inter", sans-serif; */
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.sign-heading .title h1
+{
+    color: var(--main-blue);
+    font-size: 1.75em;
+}
+
+.sign-heading .title p
+{
+    color: var(--black);
+    font-size: .85em;
+}
+
+.sign-heading .title p a
+{
+    color: var(--secondary-blue);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.sign-heading .title p a:hover 
+{
+    opacity: .5;
+}
+
+.sign-heading .unknown-pp
+{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 1px solid var(--black);
+
+    overflow: hidden;
+    position: relative;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.sign-heading .unknown-pp .head 
+{
+    width: 32px;
+    height: 32px;
+    background: var(--black);
+    border-radius: 50%;
+    position: absolute;
+    margin-bottom: 1rem;
+}
+
+.sign-heading .unknown-pp .body 
+{
+    width: 72px;
+    height: 72px;
+    background: var(--black);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+}
+
+.sign-content 
+{
+    /* width: 100%; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.primary-sign 
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+}
+
+.primary-sign > *,
+.secondary-sign > *  
+{
+    width: 100%;
+}
+
+.primary-sign .inputs .input 
+{
+    margin-top: 2rem;
+    position: relative;
+}
+
+.primary-sign .inputs .input .placeholder 
+{
+    font-size: 1em;
+    color: var(--gray);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: .6rem;
+    pointer-events: none;    
+}
+
+.primary-sign .inputs .input input 
+{
+    padding: .4rem .6rem;
+    width: 100%;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--black);
+    color: var(--black);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.primary-sign .inputs .input input:focus,
+.primary-sign .inputs .input input:valid
+{
+    border-color: var(--secondary-blue);
+}
+
+.primary-sign .inputs .input input:focus ~ .placeholder,
+.primary-sign .inputs .input input:valid ~ .placeholder
+{
+    top: -1.4rem;
+    left: 0;
+    color: var(--main-blue);
+    font-size: .9em;
+}
+
+.primary-sign .confirmation
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: .25rem;
+}
+
+.primary-sign .confirmation .checkbox-text 
+{
+    font-size: .85em;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: capitalize;
+}
+
+.primary-sign .confirmation .checkbox-text:hover 
+{
+    opacity: .7;
+}
+
+.primary-sign .signButton 
+{
+    /* font-family: "Inter", sans-serif; */
+    font-weight: 600;
+    font-size: .9em;
+    
+    padding: .7rem 0;
+    background: var(--secondary-blue);
+    border: none;
+    border: 1px solid var(--secondary-blue);
+    border-radius: 4px;
+    color: var(--white);
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-align: center;
+}
+
+.primary-sign .signButton:hover 
+{
+    background-color: var(--white);
+    color: var(--secondary-blue);
+    border-color: var(--secondary-blue);
+}
+
+.secondary-sign
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.secondary-sign .divider 
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: .25rem;
+
+    margin: 1.5rem 0;
+}
+
+.secondary-sign .divider .line 
+{
+    width: 48%;
+    height: 1px;
+    background: var(--dark-gray);
+}
+
+.secondary-sign .divider span 
+{
+    font-size: .7em;
+    color: var(--dark-gray);
+}
+
+.secondary-sign .sign-alternatives ul
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: .8rem;
+}
+
+.secondary-sign .sign-alternatives li 
+{
+    width: 30px;
+    height: 30px;
+    background: var(--main-blue);
+    border-radius: 50%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    -webkit-transition: .3s;
+
+    -o-transition: .3s;
+
+    transition: .3s;
+}
+
+.secondary-sign .sign-alternatives li:hover 
+{
+    background: var(--secondary-blue);
+}
+
+.secondary-sign .sign-alternatives ul li iconify-icon 
+{
+    color: var(--white);
+
+    /* to make the icon looks right at the middle */
+    margin-top: 6px;
+}
+
+@media screen and (min-width: 576px) {
+    .primary-sign .inputs
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .primary-sign .inputs .input 
+    {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sign-section
+    {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    main.sign 
+    {
+        justify-content: space-around;
+        gap: 2rem;
+    }
+    
+    .sign-illustration
+    {
+        display: block;
+        width: 40%;
+        max-width: 600px;
+    }
+}

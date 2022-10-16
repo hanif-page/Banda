@@ -1,0 +1,250 @@
+header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 10;
+
+    height: 80px;
+    width: 100%;
+
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    transition: box-shadow 1s;
+}
+
+header.opened
+{
+    box-shadow: none;
+}
+
+header.temporary 
+{
+    justify-content: center !important;
+}
+
+header .banda-logo 
+{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+header .banda-logo h1
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    color: var(--main-blue);
+}
+
+header .banda-logo img 
+{
+    width: 24px;
+    height: 24px;
+}
+
+.nav-toggle:hover 
+{
+    cursor: pointer;
+}
+
+.nav-toggle .bar 
+{
+    width: 36px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--main-blue);
+
+    -webkit-transition: .5s;
+
+    -o-transition: .5s;
+
+    transition: .5s;
+}
+
+.nav-toggle .bar:nth-child(2)
+{
+    margin: 4px 0;
+}
+
+.nav-toggle.opened .bar:nth-child(2)
+{
+    width: 18px;
+}
+
+.nav-toggle.opened .bar:nth-child(3)
+{
+    width: 27px;
+}
+
+.nav-full 
+{
+    display: none;
+}
+
+.nav-mobile 
+{
+    width: 100%;
+    background-color: var(--white);
+    
+    padding-top: 100px;
+    padding-bottom: 2rem;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+
+    position: fixed;
+    z-index: 9;
+    top: -500px;
+    transition: 1s ease-in-out;
+}
+
+.nav-mobile.opened 
+{
+    top: 0;
+}
+
+.nav-mobile ul
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.nav-mobile ul li a
+{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    color: var(--main-blue);
+
+    -webkit-transition: .3s;
+
+    -o-transition: .3s;
+
+    transition: .3s;
+}
+
+.nav-mobile ul li a::after 
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--main-blue);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border-radius: 10px;        
+}
+
+.nav-mobile ul li a.current-page::after,
+.nav-mobile ul li a:hover::after
+{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+        transform: scale(1);
+} 
+
+.nav-mobile ul li a:active
+{
+    color: var(--secondary-blue);
+}
+
+.nav-mobile ul li a:active::after 
+{
+    background: var(--secondary-blue)
+}
+
+@media screen and (min-width: 768px) {
+    header.opened
+    {
+        box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    }
+
+    .nav-toggle
+    {
+        display: none;
+    }
+
+    .nav-full
+    {
+        display: block;
+    }
+
+    .nav-full ul
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .nav-full ul li a
+    {
+        font-family: "Poppins", sans-serif;
+        font-size: .9em;
+        color: var(--main-blue);
+
+        -webkit-transition: .3s;
+
+        -o-transition: .3s;
+
+        transition: .3s;
+    }
+
+    .nav-full ul li a::after 
+    {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--main-blue);
+        -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+                transform: scale(0);
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        border-radius: 10px;        
+    }
+
+    .nav-full ul li a.current-page::after,
+    .nav-full ul li a:hover::after
+    {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    } 
+
+    .nav-full ul li a:active
+    {
+        color: var(--secondary-blue);
+    }
+
+    .nav-full ul li a:active::after 
+    {
+        background: var(--secondary-blue)
+    }
+
+    .nav-mobile
+    {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px)
+{
+    .nav-full ul li a
+    {
+        font-size: 1em;
+    }
+
+}
