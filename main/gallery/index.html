@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../src/styles/style.css">
     <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script defer src="../../src/scripts/script.js"></script>
+    <script defer src="../../src/scripts/sub-scripts/gallery.js"></script>
 </head>
 <body class="loading">
     
@@ -55,8 +56,41 @@
     </nav>
 
     <main>
-        GALLERY
+
+        <div class="gallery-container">
+            <div id="picsContainerMobile"></div>
+            <div id="picsContainerTablet">
+                <div class="col-1"></div>
+                <div class="col-2"></div>
+            </div>
+            <div id="picsContainerDesktop">
+                <div class="col-1"></div>
+                <div class="col-2"></div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
     </main>
+
+    <div id="lightbox-container" class="closed">
+        <div id="lightbox">
+            <div class="close">
+                <iconify-icon width="30" icon="clarity:close-line" class="close"></iconify-icon>
+            </div>
+            <img id="1" src="../../assets/pictures/blog-pics/1.jpg" alt="Our World and The Future Picture">
+        </div>
+        <div class="caption">
+            <div class="prev" onclick="prevImage(this.parentElement.parentElement.querySelector('img').id)">
+                <iconify-icon width="26" icon="akar-icons:chevron-left"></iconify-icon>
+            </div>
+            <div class="imageNumber">
+                <span class="current">1</span>/<span class="totalNumber">12</span>
+            </div>
+            <div class="next" onclick="nextImage(this.parentElement.parentElement.querySelector('img').id)">
+                <iconify-icon width="26" icon="akar-icons:chevron-right"></iconify-icon>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="top">
