@@ -23,6 +23,7 @@
     --main-orange: #FFA800;
     --main-blue: #05377F;
     --secondary-blue: #3886F7;
+    --dark-blue: #0F3D66;
 }
 
 * 
@@ -50,7 +51,7 @@ ul, li
     list-style: none;
 }
 
-header, main, footer, #lightbox-container, .image-background, .nav-mobile 
+header, main, footer, #lightbox-container, .image-background, .nav-mobile, .data-detail, .about-us 
 {
     padding-right: 2.1rem;
     padding-left: 2.1rem;
@@ -64,7 +65,7 @@ main
 }
 
 @media screen and (min-width: 768px) {
-    header, main, footer, #lightbox-container, .image-background, .nav-mobile
+    header, main, footer, #lightbox-container, .image-background, .nav-mobile, .data-detail, .about-us
     {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -72,7 +73,7 @@ main
 }
 
 @media screen and (min-width: 1024px) {
-    header, main, footer, #lightbox-container, .image-background, .nav-mobile
+    header, main, footer, #lightbox-container, .image-background, .nav-mobile, .data-detail, .about-us
     {
         padding-left: 4rem;
         padding-right: 4rem;
@@ -80,7 +81,7 @@ main
 }
 
 @media screen and (min-width: 1280px) {
-    header, main, footer, #lightbox-container, .image-background, .nav-mobile
+    header, main, footer, #lightbox-container, .image-background, .nav-mobile, .data-detail, .about-us
     {
         padding-left: 6rem;
         padding-right: 6rem;
