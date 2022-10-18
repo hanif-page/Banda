@@ -3,9 +3,18 @@
     --image-gap: .8rem;
 }
 
+main .investment-result
+{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--secondary-blue);
+    text-align: right;
+    /* opacity: ; */
+}
+
 .gallery-container
 {
-    /* margin-top: 3rem; */
+    margin-top: 2rem;
     margin-bottom: 4rem;
 }
 

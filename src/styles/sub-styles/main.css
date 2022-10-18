@@ -24,7 +24,7 @@ main.main .cta
     flex-direction: column;
 }
 
-main.main .pics-container 
+main.main .pics-container, main.educative-page .pics-container
 {
     width: 100%;
     display: flex;
@@ -34,7 +34,8 @@ main.main .pics-container
     position: relative;
 }
 
-main.main .pics-container .background-top, main.main .pics-container .background-bottom 
+main.main .pics-container .background-top, main.main .pics-container .background-bottom,
+main.educative-page .pics-container .background-top, main.educative-page .pics-container .background-bottom 
 {
     width: var(--base-pict-width);
     min-height: var(--base-pict-height);
@@ -44,13 +45,14 @@ main.main .pics-container .background-top, main.main .pics-container .background
     z-index: -1;
 } 
 
-main.main .pics-container .background-top
+main.main .pics-container .background-top, main.educative-page .pics-container .background-top
 {
     top: -1rem;
     left: 0;
 }
 
-main.main .pics-container .background-bottom 
+main.main .pics-container .background-bottom, 
+main.educative-page .pics-container .background-bottom
 {
     /* z-index:  !important; */
     top: 0;
@@ -58,7 +60,8 @@ main.main .pics-container .background-bottom
     bottom: -1rem;
 }
 
-main.main .pics-container .pict 
+main.main .pics-container .pict, 
+main.educative-page .pics-container .pict
 {
     width: var(--base-pict-width);
     min-height: var(--base-pict-height);

@@ -1,0 +1,114 @@
+main.educative-page .pics-container .background-top, main.educative-page .pics-container .background-bottom 
+{
+    background-color: var(--main-orange);
+    animation: changeBackground 5s infinite ease-in-out !important;
+
+}
+
+@keyframes changeBackground
+{
+    0%
+    {
+        background-color: var(--main-orange);
+    }
+    50%
+    {
+        background-color: var(--main-blue);
+    }
+    100%
+    {
+        background-color: var(--main-orange);
+    }
+}
+
+main.educative-page .text-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-top: 3rem;
+}
+
+main.educative-page .text 
+{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+main.educative-page h2 
+{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--black);
+}
+
+main.educative-page h2 span 
+{
+    color: var(--main-blue)
+}
+
+main.educative-page p 
+{
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+main.educative-page a 
+{
+    display: inline;
+    width: 180px;
+    margin-top: 1rem;
+
+    font-size: 1.4em;
+    color: var(--main-blue);
+    border: 1px solid var(--main-blue);
+    padding: .8rem 1.6rem;
+
+    transition: .3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.educative-page .text-content a:hover 
+{
+    background-color: var(--main-blue);
+    color: var(--white);
+}
+
+@media screen and (min-width: 992px)
+{
+    main.educative-page 
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    main.educative-page .text-content
+    {
+        width: 100%;
+    }
+
+    main.educative-page .pics-container, main.educative-page .background-bottom
+    {
+        max-height: 500px;
+    }
+}
+
+@media screen and (min-width: 1280px)
+{
+    main.educative-page h2 
+    {
+        font-size: 1.5em;
+    }
+
+    main.educative-page p 
+    {
+        font-size: 1.2;
+    } 
+}
