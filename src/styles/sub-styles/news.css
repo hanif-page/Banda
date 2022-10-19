@@ -1,0 +1,101 @@
+main.news 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+main.news .headline,
+main.news .more-news 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+main.news h1 
+{
+    font-size: 1.2em;
+    color: var(--main-orange)
+}
+
+main.news .news 
+{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    transition: .3s;
+}
+
+main.news .news:hover
+{
+    opacity: .7;
+}
+
+main.news img 
+{
+    width: 100%;
+}
+
+main.news .title h2 
+{
+    font-size: 1.4em;
+    color: var(--black);
+}
+
+main.news .title p 
+{
+    font-size: .8em;
+    color: var(--black);
+
+    text-align: justify;
+}
+
+main.news .date-released p
+{
+    font-size: .75em;
+    color: var(--dark-gray);
+}
+
+main.news .divider 
+{
+    width: 100%;
+    height: 1px;
+    background: var(--light-gray);
+}
+
+@media screen and (min-width: 768px)
+{
+    main.news 
+    {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    main.news .headline,
+    main.news .more-news 
+    {
+        width: 50%;
+    }
+
+    main.news .headline h2
+    {
+        font-size: 1.6em;
+    }
+
+    main.news .headline .title p 
+    {
+        font-size: 1.1em;
+    }
+
+    main.news .headline .date-released p 
+    {
+        font-size: .9em;
+    }
+
+    main.news .divider 
+    {
+        display: none;
+    }
+}
